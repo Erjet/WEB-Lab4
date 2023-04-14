@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Calculator Lab4</title>
+</head>
+<body>
+	<div class="win_buttons_wraper">
+		<button class="base_win_button win_button_red"></button>
+		<button class="base_win_button win_button_orage"></button>
+		<button class="base_win_button win_button_green"></button>
+	</div>
+	<input class="screen" disabled>
+	<div id="calculator">	
+		<button class = "base_button tehnical_button" id="button_AC">AC</button>
+		<button class = "base_button tehnical_button" id="button_±">±</button>
+		<button class = "base_button tehnical_button" id="button_%">%</button>
+		<button class = "base_button action_button" id="button_/">/</button>
+		<button class = "base_button" id="button_7">7</button>
+		<button class = "base_button" id="button_8">8</button>
+		<button class = "base_button" id="button_9">9</button>
+		<button class = "base_button action_button" id="button_*">*</button>
+		<button class = "base_button" id="button_4">4</button>
+		<button class = "base_button" id="button_5">5</button>
+		<button class = "base_button" id="button_6">6</button>
+		<button class = "base_button action_button" id="button_-">-</button> 
+		<button class = "base_button" id="button_1">1</button>
+		<button class = "base_button" id="button_2">2</button>
+		<button class = "base_button" id="button_3">3</button>
+		<button class = "base_button action_button" id="button_+">+</button> 
+		<button class = "base_button" id="button_0">0</button>
+		<button class = "base_button" id="button_.">.</button>
+		<button class = "base_button action_button" id="button_=">=</button>
+	</div>
+
+	<style>
+	#calculator {
+		background-color: #2A2B35;
+		width: 208px;
+		display: grid;
+		text-align: center;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-columns: 1fr 1fr 1fr 1fr;
+  		gap: 0px 0px;
+	}
+
+	#button_0 {
+		grid-column: span 2;
+		width: auto;
+	}
+
+
+	.win_buttons_wraper{
+		padding: 5px;
+		position: absolute;
+		width: 50px;
+		justify-content: space-between;
+		display: flex;
+	}
+
+	.base_win_button {
+		width: 12px;
+		height:  12px;
+		border: 0px;
+		border-radius: 6px;
+		padding: 0px 0px;
+	}
+
+	.win_button_red{
+		background-color: #FF544D;
+	}
+
+	.win_button_red:hover{
+		background-color: #FF5C56;
+	}
+
+	.win_button_red:active{
+		background-color: #FF7975;
+	}
+
+	.win_button_orage{
+		background-color: #FEB429;
+	}
+
+	.win_button_orage:hover{
+		background-color: #F9B940;
+	}
+
+	.win_button_orage:active{
+		background-color: #F7C66C;
+	}
+
+	.win_button_green{
+		background-color: #24C138;
+	}
+
+	.win_button_green:hover{
+		background-color: #4fb45a;
+	}
+
+	.win_button_green:active{
+		background-color: #6eb975;
+	}
+
+	
+	.screen{
+		width: 204px;
+		height:  60px;
+		padding: 0px 0px;
+	}
+
+	.base_button {
+		border: none;
+		text-align: center;
+		background-color: #5B5A60;
+		color: #E7E7E8;
+		width: 50px;
+		height: 50px;
+		line-height: 30px;
+		display: inline-block;
+		cursor: pointer;
+		margin: 1px;
+		font-size: 16px;
+		text-align: center;
+		transition: background .1s,
+		color .1s;
+		justify-content: center;
+		vertical-align: middle;
+  		align-items: center;
+	}
+
+	.base_button:hover {
+		background-color: #6C6B72;
+	}
+
+	.base_button:active {
+		background-color: #A4A2AD;
+	}
+
+	.action_button  {
+	background-color: #FF950C; 	
+	}
+
+	.action_button:hover  {
+	background-color: #FFA947; 	
+	}
+
+	.action_button:active  {
+	background-color: #FFB970; 	
+	}
+
+	.tehnical_button {
+	background-color: #46454C;
+	
+	} 
+	</style>
+</body>
+</html>
